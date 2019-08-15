@@ -1,0 +1,53 @@
+.side-menu {
+  position: fixed;
+  top: 210px;
+  right: 40px;
+  min-width: 16px;
+
+  &__item {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+}
+
+.side-menu__item--active, .side-menu__item:hover {
+  border: 1px solid blue;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input[type="radio"]:checked + .radio-form:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  border: 1px solid blue;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.side-menu__link {
+  margin-right:px;
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+}
