@@ -1,0 +1,25 @@
+.features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 68px; }
+
+.features-list__item {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .features-list__item:first-child {
+    margin-left: 0; }
+
+.features__desc {
+  margin-left: 11px;
+  width: 90px; }
+
+.features__img {
+  width: 50px;
+  height: 45px; }

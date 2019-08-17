@@ -1,0 +1,25 @@
+.features-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 68px;
+}
+
+.features-list__item {
+  margin-left: 15px;
+  display: flex;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.features__desc {
+  margin-left:11px;
+  width: 90px;
+}
+
+.features__img {
+  width: 50px;
+  height: 45px;
+}
+

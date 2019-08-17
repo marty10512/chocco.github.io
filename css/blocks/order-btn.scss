@@ -1,0 +1,30 @@
+.order-btn {
+  margin-top: 30px;
+  cursor: pointer;
+  width: 160px;
+  height: 60px;
+  background-color: #0f5a47;
+  border-radius: 40px;
+  position: relative;
+
+  &--hero{
+    background-color: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.205);
+  }
+}
+
+.order-btn__item {
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--hero {
+    color: #0f5a47;
+  }
+}

@@ -1,53 +1,47 @@
 .side-menu {
   position: fixed;
-  top: 210px;
+  top: 35vh;
   right: 40px;
-  min-width: 16px;
+}
 
-  &__item {
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    transition: 0.3s;
+.side-menu__item {
+  margin-top: 16px;
+  position: relative;
+
+  &:first-child {
+    margin-top: none;
   }
 }
 
-.side-menu__item--active, .side-menu__item:hover {
-  border: 1px solid blue;
+.side-menu__circle {
+  cursor: pointer;
   width: 16px;
   height: 16px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
   border-radius: 50%;
+  opacity: 0;
   transition: 0.3s;
-}
-
-input[type="radio"]:checked + .radio-form:before {
-  content: "";
-  display: block;
   position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
-  border: 1px solid blue;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  }
+
+.side-menu__circle--active, .side-menu__circle:hover {
+  opacity: 1;
   transition: 0.3s;
 }
 
 .side-menu__link {
-  margin-right:px;
   display: block;
-  position: relative;
   width: 6px;
   height: 6px;
-  background: red;
+  background: #fff;
   border-radius: 50%;
+  opacity: 1;
+  margin-left: 5px;
 }

@@ -4,7 +4,7 @@ html, body {
 
 body{
   margin: 0;
-  font-family: open_sans, roboto;
+  font-family: alegreya_sans;
   -webkit-font-smoothing: antialiased;
   -moz-animation-smoothing: grayscale;
   line-height: 1.42;
@@ -44,6 +44,8 @@ td {
 
 a {
   display: inline;
+  text-decoration: none;
+  color: inherit;
 }
 
 p {
@@ -62,9 +64,10 @@ p {
   flex-direction: column;
 }
 .container {
-  width: 1000px;
+  width: 940px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 
 .visuallyHidden {
@@ -76,4 +79,9 @@ p {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
 }

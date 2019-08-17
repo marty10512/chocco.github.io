@@ -3,7 +3,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: open_sans, roboto;
+  font-family: alegreya_sans;
   -webkit-font-smoothing: antialiased;
   -moz-animation-smoothing: grayscale;
   line-height: 1.42; }
@@ -38,7 +38,9 @@ td {
   box-sizing: border-box; }
 
 a {
-  display: inline; }
+  display: inline;
+  text-decoration: none;
+  color: inherit; }
 
 p {
   -webkit-margin-before: 0px;
@@ -65,11 +67,15 @@ p {
   flex-direction: column; }
 
 .container {
-  width: 1000px;
+  width: 940px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .visuallyHidden {
   position: absolute;
@@ -80,3 +86,7 @@ p {
   margin: -1px;
   padding: 0;
   border: 0; }
+
+.section {
+  height: 100vh;
+  min-height: 650px; }

@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 5px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__list-item {
+  margin-left: 28px;
+
+  &:first-child{
+    margin-left: 0;
+  }
+}
