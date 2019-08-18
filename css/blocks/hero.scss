@@ -3,11 +3,38 @@
   flex-direction: column;
   flex-wrap: wrap;
   background: url('../../img/hero/hero-bg.jpg') center center / cover no-repeat;
+  position: relative;
+}
+
+.hero-pics {
+  position: relative;
+
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url('../../img/hero/fruits-left.png') no-repeat;
+    width: 59px;
+    height: 112px;
+    top: 712px;
+    left: 33px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url('../../img/hero/fruits-right.png') no-repeat;
+    width: 342px;
+    height: 122px;
+    top: 712px;
+    right: 92px;
+  }
 }
 
 .hero__container {
   height: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .hero-content {
@@ -23,17 +50,5 @@
 
 .hero__pic {
   max-width: 50%;
-  position: relative;
-
-  &:before{
-  content: "";
-  display: block;
-  position: absolute;
-  background: url('../../img/hero/fruits.png') no-repeat;
-  width: 1100px;
-  height: 120px;
-  top: 486px;
-  right: -100px;
-  }
 }
 

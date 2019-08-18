@@ -7,7 +7,10 @@
   -ms-flex-direction: column;
   flex-direction: column;
   background: url("../../img/comments/comments-bg.jpg") center center/cover no-repeat; }
-  .comments:before {
+
+.comments-pics {
+  position: relative; }
+  .comments-pics:before {
     content: "";
     position: absolute;
     display: block;
@@ -15,7 +18,7 @@
     height: 312px;
     background: url("../../img/comments/fruits.png") center center no-repeat;
     left: 0;
-    top: 2200px; }
+    top: 620px; }
 
 .comments__container {
   height: 100%; }

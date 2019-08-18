@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   background: url('../../img/comments/comments-bg.jpg') center center / cover no-repeat;
-  
+}
+
+.comments-pics {
+  position: relative;
+
   &:before {
     content: "";
     position: absolute;
@@ -11,7 +15,7 @@
     height: 312px;
     background: url('../../img/comments/fruits.png') center center no-repeat;
     left: 0;
-    top: 2200px;
+    top: 620px;
   }
 }
 
