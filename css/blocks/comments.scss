@@ -1,0 +1,24 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  background: url('../../img/comments/comments-bg.jpg') center center / cover no-repeat;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 139px;
+    height: 312px;
+    background: url('../../img/comments/fruits.png') center center no-repeat;
+    left: 0;
+    top: 2200px;
+  }
+}
+
+.comments__container {
+  height: 100%;
+}
+
+.comments-title {
+  padding-top: 70px;
+}

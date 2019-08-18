@@ -2,19 +2,6 @@
   display: flex;
   justify-content: space-around;
   padding-top: 60px;
-  position: relative;
-
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    background: url('../../img/about/raspberry.png') center center no-repeat;
-    top: 295px;
-    left: -110px;
-
-  }
 }
 
 .properties-item {

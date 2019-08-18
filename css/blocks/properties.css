@@ -4,17 +4,7 @@
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-top: 60px;
-  position: relative; }
-  .properties-list:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    background: url("../../img/about/raspberry.png") center center no-repeat;
-    top: 295px;
-    left: -110px; }
+  padding-top: 60px; }
 
 .properties-item {
   max-width: 30%;

@@ -1,0 +1,31 @@
+.navigation {
+  padding-top: 22px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigation__item {
+  width: 79px;
+  height: 79px;
+  cursor: pointer;
+}
+
+.navigation__pic {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  transition: 0.3ms;
+
+  &:hover, &--active {
+    border-color: #0f5a47;
+  }
+}
+

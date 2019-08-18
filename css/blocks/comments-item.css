@@ -1,0 +1,42 @@
+.comments-item {
+  height: 345px;
+  margin-top: 45px;
+  background: url("../../img/comments/comments-item-bg.jpg") center center/cover no-repeat; }
+
+.comments-item__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 185px 35px 45px; }
+
+.comments-item__pic {
+  width: 253px; }
+
+.comments-item__photo {
+  display: block;
+  width: 253px;
+  height: 259px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center; }
+
+.comments-item__info {
+  width: 436px; }
+
+.comments-item__title {
+  font-size: 30px;
+  font-weight: 300; }
+
+.comments-item__text {
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 10px; }
+
+.comments-item__author {
+  font-size: 18px;
+  font-weight: 300;
+  padding-top: 30px; }
