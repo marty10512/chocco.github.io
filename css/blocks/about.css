@@ -1,0 +1,20 @@
+.about {
+  background: url("../../img/about/about-bg.jpg") center center/cover no-repeat; }
+
+.about__container {
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.about-desc {
+  width: 44%;
+  padding-top: 116px; }
+
+.about-desc__text {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px; }

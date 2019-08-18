@@ -1,0 +1,65 @@
+.properties-list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: url('../../img/about/raspberry.png') center center no-repeat;
+    top: 295px;
+    left: -110px;
+
+  }
+}
+
+.properties-item {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.properties-item__pic {
+  width: 130px;
+  height: 130px;
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  position: relative;
+
+  &--dots:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 21px;
+    width: 65px;
+    background: url(../../img/about/properties-dots.png) center center no-repeat;
+    right: 185px;
+    top: 50px;
+  }
+}
+
+.properties-item__pic-icon {
+  fill: none;
+  stroke: black;
+  stroke-width:0.75;
+  stroke-miterlimit:10;
+}
+
+.properties-item__title {
+  padding-top: 30px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.properties-item__desc {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+}

@@ -5,7 +5,6 @@
 }
 
 .features-list__item {
-  margin-left: 15px;
   display: flex;
 
   &:first-child {
@@ -19,7 +18,13 @@
 }
 
 .features__img {
-  width: 50px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
+.features__img-icon {
+  fill:none;
+  stroke:#b0f7ff;
+  stroke-width:0.5;
+  stroke-miterlimit:10;
+}
