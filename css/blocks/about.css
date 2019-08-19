@@ -1,17 +1,16 @@
 .about {
-  background: url("../../img/about/about-bg.jpg") center center/cover no-repeat; }
-
-.about__pics {
+  background: url("../../img/about/about-bg.jpg") center center/cover no-repeat;
   position: relative; }
-  .about__pics:before {
+  .about:before {
     content: "";
     display: block;
     position: absolute;
     width: 161px;
     height: 315px;
     background: url("../../img/about/raspberry.png") center center no-repeat;
-    top: 555px;
-    left: 0; }
+    bottom: -105px;
+    left: 0;
+    z-index: 5; }
 
 .about__container {
   height: 100%;

@@ -10,27 +10,26 @@
   flex-wrap: wrap;
   background: url("../../img/hero/hero-bg.jpg") center center/cover no-repeat;
   position: relative; }
-
-.hero-pics {
-  position: relative; }
-  .hero-pics:before {
+  .hero:before {
     content: "";
     display: block;
     position: absolute;
     background: url("../../img/hero/fruits-left.png") no-repeat;
     width: 59px;
     height: 112px;
-    top: 712px;
-    left: 33px; }
-  .hero-pics:after {
+    bottom: -46px;
+    left: 33px;
+    z-index: 5; }
+  .hero:after {
     content: "";
     display: block;
     position: absolute;
     background: url("../../img/hero/fruits-right.png") no-repeat;
     width: 342px;
     height: 122px;
-    top: 712px;
-    right: 92px; }
+    bottom: -46px;
+    right: 92px;
+    z-index: 5; }
 
 .hero__container {
   height: 100%;

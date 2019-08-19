@@ -6,11 +6,9 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: url("../../img/comments/comments-bg.jpg") center center/cover no-repeat; }
-
-.comments-pics {
+  background: url("../../img/comments/comments-bg.jpg") center center/cover no-repeat;
   position: relative; }
-  .comments-pics:before {
+  .comments:before {
     content: "";
     position: absolute;
     display: block;
@@ -18,7 +16,8 @@
     height: 312px;
     background: url("../../img/comments/fruits.png") center center no-repeat;
     left: 0;
-    top: 620px; }
+    bottom: -140px;
+    z-index: 5; }
 
 .comments__container {
   height: 100%; }

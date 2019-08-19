@@ -1,9 +1,5 @@
 .about {
   background: url('../../img/about/about-bg.jpg') center center / cover no-repeat;
-}
-
-
-.about__pics {
   position: relative;
 
   &:before {
@@ -13,9 +9,9 @@
     width: 161px;
     height: 315px;
     background: url('../../img/about/raspberry.png') center center no-repeat;
-    top: 555px;
+    bottom: -105px;
     left: 0;
-
+    z-index: 5;
   }
 }
 
