@@ -1,10 +1,13 @@
-.properties-list {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 60px;
+.properties {
+  margin-top: 60px;
 }
 
-.properties-item {
+.properties__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.properties__list-item {
   max-width: 30%;
   display: flex;
   flex-direction: column;
@@ -12,7 +15,7 @@
   align-items: center;
 }
 
-.properties-item__pic {
+.properties__list-item-pic {
   width: 130px;
   height: 130px;
   background-color: #f2f5f4;
@@ -31,20 +34,20 @@
   }
 }
 
-.properties-item__pic-icon {
+.properties__list-item-pic-icon {
   fill: none;
   stroke: black;
   stroke-width:0.75;
   stroke-miterlimit:10;
 }
 
-.properties-item__title {
+.properties__list-item-title {
   padding-top: 30px;
   font-size: 27px;
   font-weight: 700;
 }
 
-.properties-item__desc {
+.properties__list-item-desc {
   padding-top: 25px;
   text-align: center;
   font-size: 18px;

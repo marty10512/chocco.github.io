@@ -1,27 +1,18 @@
+.btn-form {
+  margin-top: 56px; }
+
 .order-btn {
-  margin-top: 30px;
   cursor: pointer;
-  width: 160px;
-  height: 60px;
   background-color: #0f5a47;
   border-radius: 40px;
-  position: relative; }
-  .order-btn--hero {
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.205);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.205); }
-
-.order-btn__item {
-  cursor: pointer;
   color: #fff;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-  .order-btn__item--hero {
+  text-align: center;
+  padding: 1.0625rem 2.15625rem; }
+  .order-btn--hero {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.205);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.205);
     color: #0f5a47; }

@@ -1,3 +1,8 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 .promo__title {
   text-transform: uppercase;

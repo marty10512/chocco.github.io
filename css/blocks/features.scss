@@ -1,10 +1,13 @@
-.features-list {
-  display: flex;
-  flex-direction: row;
-  margin-top: 68px;
+.features {
+  color: #fff;
 }
 
-.features-list__item {
+.features__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.features__list-item {
   display: flex;
 
   &:first-child {

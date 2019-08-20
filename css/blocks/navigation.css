@@ -16,7 +16,19 @@
 .navigation__item {
   width: 79px;
   height: 79px;
-  cursor: pointer; }
+  border-radius: 50%;
+  border: 7px solid #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .navigation__item--active {
+    border-color: #0f5a47; }
+
+.navigation__link {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  border-radius: 50%; }
 
 .navigation__pic {
   display: block;
@@ -24,12 +36,21 @@
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%; }
+
+/*.navigation__pic {
+  display: block;
+  object-fit: cover;
+  object-position: center;
   width: 79px;
   height: 79px;
   border-radius: 50%;
   border: 7px solid #fff;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
-  .navigation__pic:hover, .navigation__pic--active {
-    border-color: #0f5a47; }
+  transition: 0.3s;
+
+  &--active {
+    border-color: #0f5a47;
+  }
+}*/

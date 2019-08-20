@@ -16,6 +16,7 @@
     position: absolute;
     cursor: pointer;
     left: -16px;
-    top: 11px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

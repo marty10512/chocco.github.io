@@ -21,11 +21,8 @@
   -ms-flex-align: center;
   align-items: center; }
 
-.about-desc {
-  width: 44%;
+.about__desc {
   padding-top: 116px; }
 
-.about-desc__text {
-  text-align: center;
-  font-size: 18px;
-  padding-top: 10px; }
+.about__desc-text {
+  text-align: center; }

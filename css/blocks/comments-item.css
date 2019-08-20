@@ -1,7 +1,29 @@
 .comments-item {
   height: 345px;
   margin-top: 45px;
-  background: url("../../img/comments/comments-item-bg.jpg") center center/cover no-repeat; }
+  background-color: #f8faf9;
+  position: relative; }
+  .comments-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 127px;
+    height: 167px;
+    background: url("../../img/comments/comments-item-pic.png") center center no-repeat;
+    right: 0; }
+  .comments-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -60px; }
 
 .comments-item__data {
   display: -webkit-box;

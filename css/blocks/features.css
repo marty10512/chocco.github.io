@@ -1,18 +1,20 @@
-.features-list {
+.features {
+  color: #fff; }
+
+.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
-  margin-top: 68px; }
+  flex-direction: row; }
 
-.features-list__item {
+.features__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .features-list__item:first-child {
+  .features__list-item:first-child {
     margin-left: 0; }
 
 .features__desc {

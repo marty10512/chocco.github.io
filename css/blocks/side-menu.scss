@@ -1,42 +1,15 @@
 .side-menu {
   position: fixed;
-  top: 35vh;
+  top: 50%;
+  transform: translateY(-50%);
   right: 40px;
+  width: 16px;
+  height: 144px;
 }
 
 .side-menu__item {
-  margin-top: 16px;
-  position: relative;
-
-  &:first-child {
-    margin-top: none;
-  }
-}
-
-.side-menu__circle {
   cursor: pointer;
-  width: 16px;
-  height: 16px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  opacity: 0;
-  transition: 0.3s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  }
-
-.side-menu__circle--active, .side-menu__circle:hover {
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.side-menu__link {
+  margin-top: 16px;
   display: block;
   width: 6px;
   height: 6px;
@@ -44,4 +17,23 @@
   border-radius: 50%;
   opacity: 1;
   margin-left: 5px;
+  position: relative;
+}
+
+.side-menu__link {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--active, &:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
 }
