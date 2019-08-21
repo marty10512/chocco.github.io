@@ -1,0 +1,31 @@
+.team {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  height: 100vh; }
+  .team:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../../img/team/team-fruits.png") center center no-repeat;
+    width: 196px;
+    height: 578px;
+    top: -237px;
+    right: 0;
+    z-index: 5; }
+  .team:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../../img/team/berry.png") center center no-repeat;
+    width: 104px;
+    height: 114px;
+    bottom: -57px;
+    left: 0;
+    z-index: 5; }

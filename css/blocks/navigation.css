@@ -39,18 +39,3 @@
   width: 65px;
   height: 65px;
   border-radius: 50%; }
-
-/*.navigation__pic {
-  display: block;
-  object-fit: cover;
-  object-position: center;
-  width: 79px;
-  height: 79px;
-  border-radius: 50%;
-  border: 7px solid #fff;
-  transition: 0.3s;
-
-  &--active {
-    border-color: #0f5a47;
-  }
-}*/

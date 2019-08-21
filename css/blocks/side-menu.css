@@ -6,7 +6,8 @@
   transform: translateY(-50%);
   right: 40px;
   width: 16px;
-  height: 144px; }
+  height: 144px;
+  z-index: 10; }
 
 .side-menu__item {
   cursor: pointer;
