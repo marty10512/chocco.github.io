@@ -1,0 +1,6 @@
+$tablets: 768px;
+$phones: 480px;
+
+@function rem1($px) {
+  @return $px / 16px + 0rem;
+}

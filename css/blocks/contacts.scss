@@ -1,5 +1,9 @@
 .contacts {
   padding-top: 5px;
+  
+  &--footer {
+    padding-top: 0; 
+  }
 }
 
 .contacts__phone{
@@ -19,4 +23,23 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  &--footer{
+    padding-left: .8em;
+    color: #0f5a47;
+  }
+
+  &--footer:before {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    background: url('../../img/map/footer-phone.png') center center no-repeat;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 }

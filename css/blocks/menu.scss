@@ -1,18 +1,23 @@
 .menu {
-  display: flex;
-  font-size: 18px;
-  line-height: 30px;
-  padding-top: 5px;
-}
-.menu__list {
-  display: flex;
-  justify-content: space-around;
+  background: url('../../img/menu/menu-bg.jpg') center center / cover no-repeat;
+  color: #fff;
 }
 
-.menu__list-item {
-  margin-left: 28px;
+.menu__container {
+  height: 100%;
+  width:inherit;
+  display: flex;
+  flex-direction: row;
+}
 
-  &:first-child{
-    margin-left: 0;
-  }
+.menu__title {
+  width: 70%;
+}
+
+.menu__title-item {
+  padding-left: 19%;
+  padding-top: 16%;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

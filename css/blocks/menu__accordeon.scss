@@ -1,0 +1,57 @@
+.menu__accordeon {
+  width: 30%; 
+  height: 100%;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.menu__item {
+  width: rem1(100px);
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__item-info {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 630%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu__item-desc {
+ background-color: #2f3234;
+ opacity: .93;
+}
+
+.menu__item-title {
+  height: 100%;
+
+
+  &--accordeon {
+    width: 15.38%;
+  }
+}
+
+.menu__item-name {
+  width: 100vh;
+  height: 97%;
+  padding-left: 28%;
+  transform: rotate(-90deg);
+  font-size: 48px;
+  font-weight: 300;
+} 
+
+@each $bg in (milk, fruits, berries) {
+  .menu__item-title--#{$bg} {
+    background: url('../../img/menu/#{$bg}.jpg') center center /cover no-repeat;
+  }
+}
+

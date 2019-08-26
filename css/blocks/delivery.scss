@@ -1,0 +1,33 @@
+.delivery {
+  color: #0f5a47;
+  background: url('../../img/delivery/delivery-bg.jpg')center center / cover no-repeat;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background: url('../../img/delivery/berry-delivery.png') center center no-repeat;
+    width: 48px;
+    height: 48px;
+    left: 2%;
+    bottom: 26.2%;
+
+  }
+  
+  &:before {
+    content: "";
+    display: flex;
+    position: absolute;
+    background: url('../../img/delivery/leaf-delivery.png') center center no-repeat;
+    width: 135px;
+    height: 188px;
+    right: 2%;
+    bottom: 22.2%;
+
+  }
+}
+
+.delivery__title {
+  margin-top: 13.23%;
+}
