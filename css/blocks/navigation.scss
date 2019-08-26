@@ -1,5 +1,5 @@
 .navigation {
-  padding-top: 22px;
+  padding-top: rem(22px);
 }
 
 .navigation__list {
@@ -9,10 +9,10 @@
 }
 
 .navigation__item {
-  width: 79px;
-  height: 79px;
+  width: rem(79px);
+  height: rem(79px);
   border-radius: 50%;
-  border: 7px solid #fff;
+  border: rem(7px) solid #fff;
   transition: 0.3s;
 
   &--active {
@@ -22,8 +22,8 @@
 
 .navigation__link {
   display: inline-block;
-  width: 79px;
-  height: 79px;
+  width: rem(79px);
+  height: rem(79px);
   border-radius: 50%;
 }
 
@@ -31,8 +31,8 @@
   display: block;
   object-fit: cover;
   object-position: center;
-  width: 65px;
-  height: 65px;
+  width: rem(65px);
+  height: rem(65px);
   border-radius: 50%;
 }
 

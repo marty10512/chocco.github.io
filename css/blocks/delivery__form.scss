@@ -3,6 +3,11 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__group {
@@ -10,6 +15,14 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @include tablets {
+    width: 100%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .form__input-group {
@@ -33,7 +46,7 @@
 }
 
 .form__input {
-  padding: 15px 9px;
+  padding: rem(15px) rem(9px);
   background: #fff;
   border: none;
   width: 100%;
@@ -58,6 +71,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 
@@ -71,7 +88,7 @@
 }
 
 .form__btn-radio {
-  margin-left: 2px;
+  margin-left: rem(2px);
   vertical-align: middle;
   position: relative;
   display: inline-block;
@@ -92,11 +109,15 @@ input[type="radio"]:checked + .form__btn-radio {
 }
 
 .form__check {
-  margin-top: .1em
+  margin-top: .1em;
+
+  @include tablets {
+    margin-top: rem(35px);
+  }
 }
 
 .form__btn-check {
-  margin-left: 2px;
+  margin-left: rem(2px);
   vertical-align: middle;
   position: relative;
   display: inline-block;
@@ -143,9 +164,18 @@ input[type="radio"]:checked + .form__btn-radio {
 .form__btns {
   display: flex;
   flex-direction: row;
+
+  @include tablets {
+    justify-content: center;
+    margin-top: rem(20px);
+  }
 }
 
 .reset-btn {
   margin-top: 3.35em;
   margin-left: 1.67em;
+
+  @include phones {
+    margin-top: 1.5em;
+  }
 }

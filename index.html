@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <title>CHOCCO</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -50,9 +50,13 @@
               </ul>
             </nav>
 
-            <address class="contacts">
+            <address class="contacts contacts--header">
               <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
             </address>
+
+            <div class="hamburger-menu">
+              <div class="hamburger-item"></div>
+            </div>
 
           </div>
         </div>
@@ -76,7 +80,8 @@
           </div>
 
           <div class="hero__pic">
-            <img src="./img/hero/candy-bars.png" alt="" class="hero__pic-item">
+            <img src="./img/hero/candy-bars.png" alt="" class="hero__pic-desktop">
+            <img src="./img/hero/candy-bars-tablet.png" alt="" class="hero__pic-tablets">
           </div>
         </div>
 
@@ -119,7 +124,7 @@
         <div class="about__desc">
 
           <h2 class="section-title">почему chocco?</h2>
-          <p class="about__des-text">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые
+          <p class="about__desc-text">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые
             удобно взять ссобой.</p>
 
         </div>
@@ -135,12 +140,15 @@
                 </svg>
 
               </div>
-              <h3 class="properties__list-item-title">Полезно</h3>
-              <div class="properties__list-item-desc">
-                <p>Натуральность - ключевое качество нашей продукции. Мы используем только
-                  природные ингридиенты.
-                </p>
+              <div class="properties__list-item-about">
+                <h3 class="properties__list-item-title">Полезно</h3>
+                <div class="properties__list-item-desc">
+                  <p>Натуральность - ключевое качество нашей продукции. Мы используем только
+                    природные ингридиенты.
+                  </p>
+                </div>
               </div>
+
             </li>
 
             <li class="properties__list-item">
@@ -151,12 +159,15 @@
                 </svg>
 
               </div>
-              <h3 class="properties__list-item-title">Вкусно</h3>
-              <div class="properties__list-item-desc">
-                <p>Нежный, ненавязчивый, изысканный - так клиенты описывают вкусовые
-                  качества наших батончиков.
-                </p>
+              <div class="properties__list-item-about">
+                <h3 class="properties__list-item-title">Вкусно</h3>
+                <div class="properties__list-item-desc">
+                  <p>Нежный, ненавязчивый, изысканный - так клиенты описывают вкусовые
+                    качества наших батончиков.
+                  </p>
+                </div>
               </div>
+
             </li>
 
             <li class="properties__list-item">
@@ -167,12 +178,15 @@
                 </svg>
 
               </div>
-              <h3 class="properties__list-item-title">Питательно</h3>
-              <div class="properties__list-item-desc">
-                <p>Высокое содержание качественного белка, а также всех необходимых
-                  витаминов и минералов.
-                </p>
+              <div class="properties__list-item-about">
+                <h3 class="properties__list-item-title">Питательно</h3>
+                <div class="properties__list-item-desc">
+                  <p>Высокое содержание качественного белка, а также всех необходимых
+                    витаминов и минералов.
+                  </p>
+                </div>
               </div>
+
             </li>
 
           </ul>
@@ -269,6 +283,8 @@
     </section>
 
     <section class="section menu">
+
+      <div class="bg"></div>
 
       <div class="container menu__container">
 
@@ -396,7 +412,7 @@
       <div class="container delivery__container">
 
         <div class="delivery__title">
-          <h2 class="section-title">закажите доставку</h2>
+          <h2 class="section-title section-title--delivery">закажите доставку</h2>
         </div>
 
         <div class="form">

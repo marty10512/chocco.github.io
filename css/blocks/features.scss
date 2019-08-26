@@ -1,10 +1,22 @@
 .features {
   color: #fff;
+
+  @include tablets {
+    margin-top: rem(55px);
+  }
+
+  @include phones {
+    margin-top: rem(44px);
+  }
 }
 
 .features__list {
   display: flex;
   flex-direction: row;
+
+  @include tablets {
+    justify-content: space-evenly;
+  }
 }
 
 .features__list-item {
@@ -16,13 +28,13 @@
 }
 
 .features__desc {
-  margin-left:11px;
-  width: 90px;
+  margin-left:rem(11px);
+  width: rem(90px);
 }
 
 .features__img {
-  width: 60px;
-  height: 60px;
+  width: rem(60px);
+  height: rem(60px);
 }
 
 .features__img-icon {

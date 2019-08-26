@@ -9,11 +9,26 @@
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
+
+  @include phones {
+    font-size: 46px;
+    line-height: 40px;
+  }
 }
 
 .promo__desc {
   font-size: 21px;
   font-weight: normal;
-  padding-right: 100px;
-  padding-top: 15px;
+  padding-right: rem(100px);
+  padding-top: rem(15px);
+
+  @include tablets {
+    padding: 0 rem(180px);
+    text-align: center;
+  }
+
+  @include phones {
+    font-size: 18px;
+    padding: 0 rem(72px);
+  }
 }

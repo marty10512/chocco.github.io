@@ -1,6 +1,8 @@
 .menu__accordeon {
-  width: 30%; 
-  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .menu__list {
@@ -10,17 +12,23 @@
 }
 
 .menu__item {
-  width: rem1(100px);
+  width: rem(100px);
   height: 100%;
   position: relative;
   cursor: pointer;
+
+  &--active {
+    width: rem(100px);
+    height: 100%;
+    cursor: default;
+  }
 }
 
 .menu__item-info {
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 630%;
+  width: rem(630px);
   position: absolute;
   top: 0;
   right: 0;
@@ -29,6 +37,42 @@
 .menu__item-desc {
  background-color: #2f3234;
  opacity: .93;
+ width: rem(533px);
+ position: relative;
+ z-index: 5;
+
+ &:before {
+  content: "";
+  position: absolute;
+  top: rem(26px);
+  right: rem(32px);
+  height: 0;
+  width: 20px;
+  border: 2px solid #c1c2c3;
+  border-radius: 5px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+ }
+
+ &:after {
+  content: "";
+  position: absolute;
+  top: rem(26px);
+  right: rem(32px);
+  height: 0;
+  width: 20px;
+  border: 2px solid #c1c2c3;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  cursor: pointer;
+ }
+  
+ & p{
+  width: rem(433px);
+  font-size: 16px;
+  line-height: 24px;
+  padding: rem(52px) rem(27px) 0 rem(27px);
+ }
 }
 
 .menu__item-title {
@@ -41,10 +85,8 @@
 }
 
 .menu__item-name {
-  width: 100vh;
-  height: 97%;
-  padding-left: 28%;
-  transform: rotate(-90deg);
+  transform: rotate(-90deg)  translatex(-650%);
+  white-space: nowrap;
   font-size: 48px;
   font-weight: 300;
 } 

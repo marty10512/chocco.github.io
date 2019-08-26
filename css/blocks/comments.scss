@@ -4,15 +4,18 @@
   background-color: #fff;
   position: relative;
 
+  @include tablets {
+  }
+
   &:before {
     content: "";
     position: absolute;
     display: block;
-    width: 139px;
-    height: 312px;
+    width: rem(139px);
+    height: rem(312px);
     background: url('../../img/comments/fruits-left.png') center center no-repeat;
     left: 0;
-    bottom: -140px;
+    bottom: rem(-140px);
     z-index: 5;
   }
 
@@ -20,19 +23,23 @@
     content: "";
     position: absolute;
     display: block;
-    width: 150px;
-    height: 86px;
+    width: rem(150px);
+    height: rem(86px);
     background: url('../../img/comments/fruits-right.png') center center no-repeat;
     right: 0;
-    top: 35px;
+    top: rem(35px);
     z-index: 5;
   }
 }
 
 .comments__container {
   height: 100%;
+
+  @include tablets {
+  align-items: center;
+  }
 }
 
 .comments__title {
-  padding-top: 10.7%;
+  padding-top: rem(69px);
 }

@@ -6,5 +6,9 @@
 
   &--delivery{
     color: inherit;
+
+    @include phones {
+      font-size: 40px;
+    }
   }
 }

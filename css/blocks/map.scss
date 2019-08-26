@@ -10,11 +10,19 @@
   bottom: 0;
   height: 4.42em;
   width: 100%;
+
+  @include phones {
+    height: rem(170px);
+  }
 }
 
 .footer__container{
   display: flex;
   flex-direction: row;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .footer__item {
@@ -27,6 +35,16 @@
   &--right{
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  @include phones {
+    width: 100%;
+    align-items: center;
+
+    &--right{
+      justify-content: center;
+      margin-top: rem(12px);
+    }
   }
 }
 

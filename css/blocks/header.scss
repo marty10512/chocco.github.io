@@ -1,12 +1,22 @@
 .header {
   color: #fff;
-  width: 940px;
+  width: rem(940px);
   position: absolute;
   top: 0;
+  
+
+  @include tablets {
+    width: rem(768px);
+  }
+
+  @include phones {
+    width: rem(480px);
+  }
 }
 
 .header__content {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top:24px;
+  padding-top: rem(24px);
 }

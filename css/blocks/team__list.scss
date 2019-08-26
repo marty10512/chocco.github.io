@@ -1,9 +1,19 @@
 .team__list {
-  margin-top: 10%;
+  margin-top: rem(65px);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   z-index: 10;
+
+  @include tablets {
+    flex-wrap: wrap;
+    padding: 0 rem(110px);
+    margin-top: rem(45px)
+  }
+
+  @include phones {
+    padding: 0 rem(39px);
+  }
 }
 
 .team__list-item {
@@ -11,6 +21,12 @@
   flex-direction: column;
   align-items: center;
   width: 21%;
+  z-index: 10;
+
+  @include tablets {
+    width: 40%;
+    margin-top: 10px;
+  }
 
   &--active .team__list-desc{
     height: 100%;
@@ -32,8 +48,13 @@
     display: block;
     object-fit: cover;
     object-position: center;
-    width: 219px;
-    height: 288px;
+    width: rem(219px);
+    height: rem(288px);
+
+    @include phones {
+    width: rem(143px);
+    height: rem(184px);
+    }
   }
 }
 
@@ -47,9 +68,9 @@
     content: "";
     display: block;
     position: absolute;
-    border: 4.5px solid transparent;
-    border-top: 4.5px solid #0f5a47;
-    right: -20px;
+    border: rem(4.5px) solid transparent;
+    border-top: rem(4.5px) solid #0f5a47;
+    right: rem(-20px);
     top: 50%;
     opacity: 1;
     transition: 0.3s;
@@ -59,9 +80,9 @@
     content: "";
     display: block;
     position: absolute;
-    border: 4.5px solid transparent;
+    border: rem(4.5px) solid transparent;
     border-bottom: 4.5px solid #0f5a47;
-    right: -20px;
+    right: rem(-20px);
     top: 38%;
     opacity: 0;
     transition: 0.3s;

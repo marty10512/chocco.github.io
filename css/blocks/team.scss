@@ -10,9 +10,9 @@
     display: block;
     position: absolute;
     background: url('../../img/team/team-fruits.png') center center no-repeat;
-    width: 196px;
-    height: 578px;
-    top: -237px;
+    width: rem(196px);
+    height: rem(578px);
+    top: rem(-237px);
     right: 0;
     z-index: 5;
   }
@@ -22,14 +22,15 @@
     display: block;
     position: absolute;
     background: url('../../img/team/berry.png') center center no-repeat;
-    width: 104px;
-    height: 114px;
-    bottom: -57px;
+    width: rem(104px);
+    height: rem(114px);
+    bottom: rem(-57px);
     left: 0;
     z-index: 5;
   }
 }
 
 .team__title {
-  margin-top:11.54%;
+  margin-top:rem(75px);
+  z-index: 10;
 }

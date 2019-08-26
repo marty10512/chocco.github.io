@@ -6,12 +6,18 @@
     content: "";
     display: block;
     position: absolute;
-    width: 161px;
-    height: 315px;
+    width: rem(161px);
+    height: rem(315px);
     background: url('../../img/about/raspberry.png') center center no-repeat;
-    bottom: -105px;
+    bottom: rem(-105px);
     left: 0;
     z-index: 5;
+  }
+
+  @include phones {
+    &:before{
+      display: none;
+    }
   }
 }
 
@@ -22,9 +28,21 @@
 }
 
 .about__desc {
-  padding-top: 116px;
+  padding-top: rem(116px);
+
+  @include tablets {
+    padding-top: rem(30px);
+  }
 }
 
 .about__desc-text {
   text-align: center;
+
+  @include tablets {
+    padding: 0 rem(150px);
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }

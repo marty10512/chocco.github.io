@@ -8,11 +8,17 @@
     display: flex;
     position: absolute;
     background: url('../../img/delivery/berry-delivery.png') center center no-repeat;
-    width: 48px;
-    height: 48px;
+    width: rem(48px);
+    height: rem(48px);
     left: 2%;
     bottom: 26.2%;
 
+  }
+
+  @include phones {
+    &:after{
+      display: none;
+    }
   }
   
   &:before {
@@ -20,11 +26,17 @@
     display: flex;
     position: absolute;
     background: url('../../img/delivery/leaf-delivery.png') center center no-repeat;
-    width: 135px;
-    height: 188px;
+    width: rem(135px);
+    height: rem(188px);
     right: 2%;
     bottom: 22.2%;
 
+  }
+
+  @include phones {
+    &:before{
+      display: none;
+    }
   }
 }
 

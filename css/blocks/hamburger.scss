@@ -1,0 +1,76 @@
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: rem(26px);
+
+  @include tablets {
+    display: block;
+    width: rem(25px);
+    height: rem(25px);
+    cursor: pointer;
+  }
+
+  @include phones {
+    width: rem(24px);
+    height: rem(24px);
+    right: rem(0px);
+  }
+}
+
+.hamburger-item{
+  margin-top: rem(10px);
+  margin-left: rem(2px); 
+  display: none;
+  position: relative;
+
+  @include tablets {
+    display: block;
+    height: 0;
+    width: rem(20px);
+    border: 2px solid #fff;
+    border-radius: 25px;
+    transition: .3s;
+
+    &:hover {
+      border-color: #61c4d9;
+
+      &:after {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &:before {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0;
+      width: rem(16px);
+      border: 2px solid #fff;
+      border-radius: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: rem(7px);
+      transition: .3s;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0;
+      width: rem(16px);
+      border: 2px solid #fff;
+      border-radius: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: rem(6px);
+      transition: .3s;
+    }
+  }
+}

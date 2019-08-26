@@ -1,6 +1,6 @@
 .comments-item {
-  height: 345px;
-  margin-top: 45px;
+  height: rem(345px);
+  margin-top: rem(45px);
   background-color: #f8faf9;
   position: relative;
 
@@ -8,9 +8,9 @@
     content: "";
     display: block;
     position: absolute;
-    width: 127px;
-    height: 167px;
-    background: url('../../img/comments/comments-item-pic.png') center center no-repeat;
+    width: rem(127px);
+    height: rem(167px);
+    background: url('../../img/comments/comments-item-pic.png') center center / cover no-repeat;
     right: 0;
   }
 
@@ -18,51 +18,103 @@
     content: "";
     display: block;
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #fff;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
     top: -60px;
   }
+
+  @include tablets {
+    height: rem(600px);
+    width: rem(460px);
+
+    &:before{
+      width: rem(117px);
+      height: rem(157px);
+    }
+  }
+
+  @include phones {
+    margin-top: rem(34px);
+    height: rem(486px);
+    width: rem(460px);
+  }
 }
 
 .comments-item__data {
   display: flex;
   justify-content: space-between;
-  padding: 50px 185px 35px 45px;
+  padding: rem(50px) rem(185px) rem(35px) rem(45px);
+
+  @include tablets {
+    flex-direction: column;
+    padding: rem(50px) rem(136px) rem(35px);
+    align-items: center;
+  }
 }
 
 .comments-item__pic {
-  width: 253px;
+  width: rem(253px);
+
+  @include tablets {
+    width: rem(203px);
+  }
+
+  @include phones {
+    width: rem(124px);
+  }
 }
 
 .comments-item__photo {
   display: block;
-  width: 253px;
-  height: 259px;
+  width: rem(253px);
+  height: rem(259px);
   object-fit: cover;
   object-position: center;
+
+  @include tablets {
+    width: rem(203px);
+    height: rem(207px);
+  }
+
+  @include phones {
+    width: rem(124px);
+    height: rem(121px);
+  }
 }
 
 .comments-item__info {
-  width: 436px;
+  width: rem(436px);
+
+  @include tablets {
+   text-align: center; 
+  }
 }
 
 .comments-item__title {
   font-size: 30px;
   font-weight: 300;
+
+  @include tablets {
+   margin-top: rem(35px); 
+  }
+
+  @include phones {
+    margin-top: rem(23px);
+  }
 }
 
 .comments-item__text {
   font-size: 18px;
   font-weight: 100;
-  padding-top: 10px;
+  padding-top: rem(10px);
 }
 
 .comments-item__author {
   font-size: 18px;
   font-weight: 300;
-  padding-top: 30px;
+  padding-top: rem(30px);
 }

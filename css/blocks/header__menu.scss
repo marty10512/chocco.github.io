@@ -2,7 +2,15 @@
   display: flex;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 5px;
+  padding-top: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
+  
+  @include phones {
+    display: none;
+  }
 }
 .header__menu-list {
   display: flex;
@@ -10,7 +18,7 @@
 }
 
 .header__menu-item {
-  margin-left: 28px;
+  margin-left: rem(28px);
 
   &:first-child{
     margin-left: 0;

@@ -1,10 +1,19 @@
 .properties {
-  margin-top: 60px;
+  margin-top: rem(60px);
+
+  @include tablets {
+    margin-top: 0;
+  }
 }
 
 .properties__list {
   display: flex;
   justify-content: space-around;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .properties__list-item {
@@ -13,11 +22,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+
+  @include tablets {
+    max-width: 60%;
+    margin-top: rem(30px);
+  }
+
+  @include phones {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
 }
 
 .properties__list-item-pic {
-  width: 130px;
-  height: 130px;
+  width: rem(130px);
+  height: rem(130px);
   background-color: #f2f5f4;
   border-radius: 50%;
   position: relative;
@@ -26,11 +47,33 @@
     content: "";
     display: block;
     position: absolute;
-    height: 21px;
-    width: 65px;
+    height: rem(21px);
+    width: rem(65px);
     background: url(../../img/about/properties-dots.png) center center no-repeat;
-    right: 185px;
-    top: 50px;
+    right: rem(185px);
+    top: rem(50px);
+  }
+
+  @include tablets {
+    &:before {
+      display: none;
+    }
+  }
+
+  @include phones {
+    &:before {
+      display: none;
+      width: rem(125px);
+      height: rem(125px);
+    }
+  }
+}
+
+.properties__list-item-about {
+
+  @include phones {
+  max-width: 70%;
+  margin-left: rem(15px);
   }
 }
 
@@ -42,15 +85,27 @@
 }
 
 .properties__list-item-title {
-  padding-top: 30px;
+  padding-top: rem(30px);
   font-size: 27px;
   font-weight: 700;
+
+  @include tablets {
+    padding-top: rem(10px);
+  }
 }
 
 .properties__list-item-desc {
-  padding-top: 25px;
+  padding-top: rem(25px);
   text-align: center;
   font-size: 18px;
   font-weight: 100;
   z-index: 10;
+
+  @include tablets {
+    padding-top: rem(20px);
+  }
+
+  @include phones {
+    text-align: start;
+  }
 }

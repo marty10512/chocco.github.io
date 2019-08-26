@@ -1,8 +1,18 @@
 .contacts {
-  padding-top: 5px;
+  padding-top: rem(5px);
   
   &--footer {
     padding-top: 0; 
+  }
+
+  &--header {
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+    display: none;
+    }
   }
 }
 
@@ -11,15 +21,16 @@
   line-height: 30px;
   font-style: normal;
   position: relative;
+
   &:before {
     content: "";
     display: block;
-    height: 12px;
-    width: 12px;
+    height: rem(12px);
+    width: rem(12px);
     background: url('../../img/hero/phone.png') center center no-repeat;
     position: absolute;
     cursor: pointer;
-    left: -16px;
+    left: rem(-16px);
     top: 50%;
     transform: translateY(-50%);
   }

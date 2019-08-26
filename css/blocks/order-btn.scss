@@ -1,5 +1,9 @@
 .btn-form {
-  margin-top: 56px;
+  margin-top: rem(56px);
+
+  @include phones {
+    margin-top: rem(25px);
+  }
 }
 
 .order-btn {
