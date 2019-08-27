@@ -1,17 +1,9 @@
 .header {
   color: #fff;
-  width: rem(940px);
   position: absolute;
   top: 0;
-  
-
-  @include tablets {
-    width: rem(768px);
-  }
-
-  @include phones {
-    width: rem(480px);
-  }
+  left: 2.5%;
+  right: 2.5%;
 }
 
 .header__content {

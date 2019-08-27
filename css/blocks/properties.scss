@@ -70,6 +70,7 @@
 }
 
 .properties__list-item-about {
+  flex: 1;
 
   @include phones {
   max-width: 70%;
@@ -88,9 +89,15 @@
   padding-top: rem(30px);
   font-size: 27px;
   font-weight: 700;
+  text-align: center;
 
   @include tablets {
+    
     padding-top: rem(10px);
+  }
+
+  @include phones {
+    text-align: start;
   }
 }
 

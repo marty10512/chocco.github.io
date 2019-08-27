@@ -69,8 +69,9 @@
 .form__btn {
   margin-left: 1.5%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
 
   @include tablets {
     justify-content: center;
@@ -109,10 +110,14 @@ input[type="radio"]:checked + .form__btn-radio {
 }
 
 .form__check {
-  margin-top: .1em;
+  margin-top: 1em;
 
   @include tablets {
     margin-top: rem(35px);
+  }
+
+  @include phones {
+    margin-top: 1em;
   }
 }
 
@@ -167,13 +172,18 @@ input[type="radio"]:checked + .form__btn-radio {
 
   @include tablets {
     justify-content: center;
-    margin-top: rem(20px);
   }
 }
 
 .reset-btn {
+  cursor: pointer;
   margin-top: 3.35em;
   margin-left: 1.67em;
+  transition: .3s;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   @include phones {
     margin-top: 1.5em;

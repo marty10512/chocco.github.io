@@ -58,6 +58,7 @@
 
 .comments-item__pic {
   width: rem(253px);
+  object-fit: cover;
 
   @include tablets {
     width: rem(203px);
@@ -88,6 +89,7 @@
 
 .comments-item__info {
   width: rem(436px);
+  margin-left: rem(16px);
 
   @include tablets {
    text-align: center; 

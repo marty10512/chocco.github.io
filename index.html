@@ -415,7 +415,7 @@
           <h2 class="section-title section-title--delivery">закажите доставку</h2>
         </div>
 
-        <div class="form">
+        <form class="form" autocomplete="on">
 
           <div class="form__group">
 
@@ -492,9 +492,10 @@
             </div>
 
             <div class="form__btns">
-              <div class="btn-form">
+              <label for="submit" class="btn-form">
+                <input type="submit" id="submit" class="visuallyHidden">
                 <a href="#" class="order-btn">заказать</a>
-              </div>
+              </label>
               <label for="reset" class="reset-btn">
                 <input type="reset" id="reset" class="visuallyHidden">
                 <span class=""></span>
@@ -507,7 +508,7 @@
 
 
 
-        </div>
+        </form>
 
     </section>
 

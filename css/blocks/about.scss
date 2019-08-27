@@ -1,6 +1,8 @@
 .about {
   background: url('../../img/about/about-bg.jpg') center center / cover no-repeat;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &:before {
     content: "";
@@ -8,7 +10,7 @@
     position: absolute;
     width: rem(161px);
     height: rem(315px);
-    background: url('../../img/about/raspberry.png') center center no-repeat;
+    background: url('../../img/about/raspberry.png') center center /cover no-repeat;
     bottom: rem(-105px);
     left: 0;
     z-index: 5;

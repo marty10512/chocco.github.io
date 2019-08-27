@@ -27,6 +27,10 @@
   opacity: 1;
   margin-left: rem(5px);
   position: relative;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .side-menu__link {

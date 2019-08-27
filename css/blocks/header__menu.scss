@@ -14,11 +14,17 @@
 }
 .header__menu-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .header__menu-item {
   margin-left: rem(28px);
+  transition: .3s;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &:first-child{
     margin-left: 0;

@@ -15,7 +15,8 @@
 
 .menu__container {
   height: 100%;
-  width:inherit;
+  width:100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   position: relative;

@@ -16,12 +16,22 @@
   text-transform: uppercase;
   text-align: center;
   padding: 1.0625rem 2.15625rem;
+  transition: .3s;
+
+  &:hover {
+    color: #0f5a47;
+    background-color: #fff;
+  }
 
   &--hero{
     background-color: #fff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.205);
     color: #0f5a47;
     
+    &:hover {
+      background-color: #0f5a47;
+      color: #fff;
+    }
   }
 }
 

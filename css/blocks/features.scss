@@ -17,18 +17,27 @@
   @include tablets {
     justify-content: space-evenly;
   }
+
+  @include phones {
+    justify-content: space-between;
+  }
 }
 
 .features__list-item {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &:first-child {
     margin-left: 0;
   }
+
+  &:nth-child(2) .features__desc {
+    margin-left:rem(11px);
+  }
 }
 
 .features__desc {
-  margin-left:rem(11px);
   width: rem(90px);
 }
 

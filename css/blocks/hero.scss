@@ -13,7 +13,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: url('../../img/hero/fruits-left.png') no-repeat;
+    background: url('../../img/hero/fruits-left.png') center center /cover no-repeat;
     width: rem(59px);
     height: rem(112px);
     bottom: rem(-46px);
@@ -25,7 +25,7 @@
     content: "";
     display: block;
     position: absolute;
-    background: url('../../img/hero/fruits-right.png') no-repeat;
+    background: url('../../img/hero/fruits-right.png') center center /cover no-repeat;
     width: rem(460px);
     height: rem(341px);
     bottom: rem(-46px);

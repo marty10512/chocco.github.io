@@ -7,7 +7,7 @@
     content: "";
     display: flex;
     position: absolute;
-    background: url('../../img/delivery/berry-delivery.png') center center no-repeat;
+    background: url('../../img/delivery/berry-delivery.png') center center /cover no-repeat;
     width: rem(48px);
     height: rem(48px);
     left: 2%;
@@ -25,7 +25,7 @@
     content: "";
     display: flex;
     position: absolute;
-    background: url('../../img/delivery/leaf-delivery.png') center center no-repeat;
+    background: url('../../img/delivery/leaf-delivery.png') center center /cover no-repeat;
     width: rem(135px);
     height: rem(188px);
     right: 2%;

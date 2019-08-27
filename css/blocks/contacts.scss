@@ -1,11 +1,17 @@
 .contacts {
   padding-top: rem(5px);
+  padding-left: rem(26px);
+  transition: .3s;
   
   &--footer {
     padding-top: 0; 
   }
 
   &--header {
+    &:hover {
+      text-decoration: underline;
+    }
+
     @include tablets {
       display: none;
     }
@@ -21,6 +27,7 @@
   line-height: 30px;
   font-style: normal;
   position: relative;
+  white-space: nowrap;
 
   &:before {
     content: "";
