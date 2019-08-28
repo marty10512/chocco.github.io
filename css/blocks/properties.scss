@@ -63,8 +63,29 @@
   @include phones {
     &:before {
       display: none;
-      width: rem(125px);
-      height: rem(125px);
+    }
+  }
+
+  &--dots:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: rem(21px);
+    width: rem(65px);
+    background: url(../../img/about/properties-dots.png) center center no-repeat;
+    left: rem(185px);
+    top: rem(50px);
+  }
+
+  @include tablets {
+    &:after {
+      display: none;
+    }
+  }
+
+  @include phones {
+    &:after {
+      display: none;
     }
   }
 }

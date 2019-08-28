@@ -1,99 +1,171 @@
-.menu__accordeon {
+
+.menu__list {
+  display: flex;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-}
 
-.menu__list {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-}
-
-.menu__item {
-  width: rem(100px);
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-
-  &--active {
-    width: rem(100px);
-    height: 100%;
-    cursor: default;
+  @include phones {
+    justify-content: flex-end;
+    width: 100%;
   }
 }
 
-.menu__item-info {
+.menu__item {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: rem(630px);
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+  z-index: 8;
 
-.menu__item-desc {
- background-color: #2f3234;
- opacity: .93;
- width: rem(533px);
- position: relative;
- z-index: 5;
+  &--active {
 
- &:before {
-  content: "";
-  position: absolute;
-  top: rem(26px);
-  right: rem(32px);
-  height: 0;
-  width: 20px;
-  border: 2px solid #c1c2c3;
-  border-radius: 5px;
-  transform: rotate(-45deg);
-  cursor: pointer;
- }
+    @include phones {
+      z-index: 20;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
 
- &:after {
-  content: "";
-  position: absolute;
-  top: rem(26px);
-  right: rem(32px);
-  height: 0;
-  width: 20px;
-  border: 2px solid #c1c2c3;
-  border-radius: 5px;
-  transform: rotate(45deg);
-  cursor: pointer;
- }
+    .menu__item-title {
+      &:nth-child(2) {
+        display: block;
+      }
+    }
   
- & p{
-  width: rem(433px);
-  font-size: 16px;
-  line-height: 24px;
-  padding: rem(52px) rem(27px) 0 rem(27px);
- }
+
+    .menu__item-desc {
+      position: initial;
+      transform: translate(0);
+      opacity: 1;
+    }
+
+    .menu__item-info {
+      max-width: rem(540px);
+      width: 100%;
+      flex: 1;
+    }
+
+    @include tablets  {
+      .menu__item-info{
+        max-width: rem(530px);
+      }
+    }
+  }
 }
 
 .menu__item-title {
-  height: 100%;
+  width: rem(80px);
+  background-size: cover;
+  position: relative;
 
+  &:nth-child(2) {
+    display: none;
+    position: absolute;
+    opacity: .8;
+    top:0;
+    bottom:0;
+    right: 0;
+    z-index: -10;
 
-  &--accordeon {
-    width: 15.38%;
+    @include phones {
+      right: rem(130px);
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &--milk {
+    background-image: url("../../img/menu/milk.jpg");
+    background-position: center;
+  }
+
+  &--fruits {
+    background-image: url("../../img/menu/fruits.jpg");
+    background-position: center;
+  }
+
+  &--berries {
+    background-image: url("../../img/menu/berries.jpg");
+    background-position: center;
+  }
+
+  @include tablets {
+    min-width: rem(60px);
+  }
+
+  @include phones {
+    min-width: rem(50px);
   }
 }
 
 .menu__item-name {
-  transform: rotate(-90deg)  translatex(-650%);
-  white-space: nowrap;
   font-size: 48px;
   font-weight: 300;
-} 
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  bottom: -3%;
+}
 
-@each $bg in (milk, fruits, berries) {
-  .menu__item-title--#{$bg} {
-    background: url('../../img/menu/#{$bg}.jpg') center center /cover no-repeat;
+.menu__item-info {
+  background: rgba(#2f3234, .93);
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 1s;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 100;
+    width: 24px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    right: 3%;
+    top: 3%;
+    transform: rotate(-45deg);
+    cursor: pointer;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 100;
+    width: 24px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    right: 3%;
+    top: 3%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: .3s;
   }
 }
 
+.menu__item-desc {
+  position: absolute;
+  line-height: rem(24px);
+  font-size: 16px;
+  padding: rem(55px) rem(100px) rem(55px) rem(34px);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 4s cubic-bezier(0.645, 0.045, 0.355, 1), transform 3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  @include phones {
+    padding: rem(75px) rem(15px);
+  }
+}

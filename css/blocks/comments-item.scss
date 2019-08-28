@@ -4,6 +4,10 @@
   background-color: #f8faf9;
   position: relative;
 
+  @include phones {
+    padding: 0 rem(1px);
+  }
+
   &:before {
     content: "";
     display: block;
@@ -19,12 +23,13 @@
     display: block;
     position: absolute;
     width: rem(90px);
-    height: rem(90px);
+    height: rem(45px);
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+
     left: 50%;
     transform: translateX(-50%);
-    top: -60px;
+    top: rem(-20px);
   }
 
   @include tablets {
@@ -51,7 +56,7 @@
 
   @include tablets {
     flex-direction: column;
-    padding: rem(50px) rem(136px) rem(35px);
+    padding: rem(50px) 0 rem(35px);
     align-items: center;
   }
 }
@@ -112,7 +117,7 @@
 .comments-item__text {
   font-size: 18px;
   font-weight: 100;
-  padding-top: rem(10px);
+  padding: rem(10px);
 }
 
 .comments-item__author {

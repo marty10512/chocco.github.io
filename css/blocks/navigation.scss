@@ -14,6 +14,7 @@
   border-radius: 50%;
   border: rem(7px) solid #fff;
   transition: 0.3s;
+  z-index: 20;
 
   &--active {
     border-color: #0f5a47;

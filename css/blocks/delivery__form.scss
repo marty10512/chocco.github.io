@@ -85,6 +85,10 @@
 
   &--card{
     margin-left:1.67em;
+
+    @include phones {
+      margin-left: 0;
+    }
   }
 }
 
