@@ -40,13 +40,5 @@
 
 .about__desc-text {
   text-align: center;
-
-  @include tablets {
-    padding: 0 rem(150px);
-  }
-
-  @include phones {
-    padding: 0;
-  }
-
+  max-width: rem(420px);
 }

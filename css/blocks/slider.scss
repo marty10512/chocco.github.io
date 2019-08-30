@@ -1,0 +1,51 @@
+.slider {
+background-color: #f8faf9;
+}
+
+.slider__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(16px);
+  height: rem(36px);
+
+  @include tablets {
+    left: unset;
+    right: 83%;
+    top: 33.2%;
+  }
+
+  @include phones {
+    right: unset;
+    left: 0;
+  }
+}
+
+.next-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(16px);
+  height: rem(36px);
+
+  @include tablets {
+    right: unset;
+    left: 83%;
+    top: 33.2%;
+  }
+
+  @include phones {
+    left: unset;
+    right: 0;
+  }
+}

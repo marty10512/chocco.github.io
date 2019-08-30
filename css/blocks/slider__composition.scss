@@ -1,0 +1,116 @@
+.slider__composition{
+  position: absolute;
+  display: block;
+  width: rem(90px);
+  height: rem(90px);
+  top: 0;
+  left: 0;
+  
+  @include tablets {
+    display: none;
+  }
+}
+
+.slider__composition-tablets {
+  position: absolute;
+  display: none;
+  width: rem(90px);
+  height: rem(90px);
+  right: rem(7px);
+  top: rem(24px);
+  z-index: 30;
+
+  @include tablets {
+    display: block;
+  }
+
+}
+
+.slider__composition-dropdown{
+  width: rem(90px);
+  height: rem(90px);
+  background-color: #00accf;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+  &:hover .composition__list {
+    right: rem(-281px)
+  }
+
+  &:hover .composition__list-tablets {
+    left: rem(-281px)
+  }
+}
+
+.slider__composition-icon{
+  width: 51px;
+  height: 51px;
+  fill: #fff;
+}
+
+.slider__composition-title {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.composition__list {
+  position: absolute;
+  right: rem(-9999px);
+  top: 0;
+  background-color: #fff;
+  height: rem(382px);
+  width: rem(280px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: .4s;
+  opacity: .95;
+}
+
+.composition__list-tablets {
+  position: absolute;
+  left: rem(-9999px);
+  top: 0;
+  background-color: #fff;
+  height: rem(382px);
+  width: rem(280px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: .4s;
+  opacity: .95;
+}
+
+.compoistion__list-item {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 rem(20px) 0 rem(30px);
+
+  &:first-child {
+    padding-top: rem(25px);
+  }
+}
+
+.compoistion__list-item-pic{
+  width: rem(35px);
+  height: rem(35px);
+}
+
+.compoistion__list-item-name {
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.compoistion__list-item-weight {
+  margin-left: auto;
+}
