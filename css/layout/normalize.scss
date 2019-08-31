@@ -180,3 +180,7 @@ template {
 [hidden] {
   display: none;
 }
+
+input, textarea, select {
+  -webkit-appearance: none;
+}
