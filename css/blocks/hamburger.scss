@@ -1,76 +1,83 @@
-.hamburger-menu {
+.hamburger {
   display: none;
-  position: absolute;
-  right: rem(26px);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height:100vh;
 
   @include tablets {
     display: block;
-    width: rem(25px);
-    height: rem(25px);
-    cursor: pointer;
-  }
-
-  @include phones {
-    width: rem(24px);
-    height: rem(24px);
-    right: rem(0px);
   }
 }
 
-.hamburger-item{
-  margin-top: rem(10px);
-  margin-left: rem(2px); 
-  display: none;
+.hamburger__nemu {
   position: relative;
+  width: 100%;
+  height: rem(1100px);
+}
 
-  @include tablets {
-    display: block;
-    height: 0;
+.hamburger__nemu--active {
+  position: relative;
+  width: 100%;
+  height: rem(1100px);
+}
+
+.hamburger__menu-data{
+  position: absolute;
+  width: rem(30px);
+  height: rem(30px);
+  top: rem(25px);
+  right: rem(24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger__menu-item {
+  width: rem(24px);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: .3s;
+
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 7px;
+    right: -2px;
     width: rem(20px);
     border: 2px solid #fff;
-    border-radius: 25px;
+    border-radius: 5px;
     transition: .3s;
+  }
 
-    &:hover {
-      border-color: #61c4d9;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: -2px;
+    width: rem(20px);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: .3s;
+  }
+}
 
-      &:after {
-        top: 0;
-        transform: rotate(45deg);
-      }
+.hamburger__menu--active{
+  .hamburger__menu-item {
+    border: unset;
 
-      &:before {
-        bottom: 0;
-        transform: rotate(-45deg);
-      }
+    &:after{
+      bottom: -2px;
+      transform: rotate(45deg);
     }
 
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 0;
-      width: rem(16px);
-      border: 2px solid #fff;
-      border-radius: 25px;
-      left: 50%;
-      transform: translateX(-50%);
-      top: rem(7px);
-      transition: .3s;
-    }
-
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 0;
-      width: rem(16px);
-      border: 2px solid #fff;
-      border-radius: 25px;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: rem(6px);
-      transition: .3s;
+    &:before{
+      top: -2px;
+      transform: rotate(-45deg);
     }
   }
 }

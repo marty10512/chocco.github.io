@@ -1,0 +1,38 @@
+.fs-menu {
+  display: flex;
+  position: absolute;
+  top: rem(-9999px);
+  right: -2.6%;
+  left: -2.6%;
+  height: rem(1100px);
+  background-color: #303436;
+  opacity: .99;
+  justify-content: center;
+  z-index: 99;
+  transition: .3s;
+}
+
+.fs-menu__list {
+padding-top: rem(140px);
+height: rem(500px);
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.fs-menu__list-link {
+  line-height: rem(72px);
+  font-size: 36px;
+  color: #fff;
+
+  &:hover{
+    color: #61c4d9;
+  }
+}
+
+.hamburger__menu--active {
+  .fs-menu {
+    top: 0;
+  }
+}
