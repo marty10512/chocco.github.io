@@ -1,8 +1,15 @@
+.comments__list {
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .comments-item {
   height: rem(345px);
   margin-top: rem(45px);
   background-color: #f8faf9;
   position: relative;
+  display: none;
 
   @include phones {
     padding: 0 rem(1px);
@@ -33,7 +40,7 @@
   }
 
   @include tablets {
-    height: rem(600px);
+    height: rem(660px);
     width: rem(460px);
 
     &:before{
@@ -44,9 +51,13 @@
 
   @include phones {
     margin-top: rem(34px);
-    height: rem(486px);
+    height: rem(540px);
     width: rem(460px);
   }
+}
+
+.comments-item--active {
+  display: block;
 }
 
 .comments-item__data {
@@ -124,4 +135,8 @@
   font-size: 18px;
   font-weight: 300;
   padding-top: rem(30px);
+
+  &--two{
+    padding-top: 0;
+  }
 }

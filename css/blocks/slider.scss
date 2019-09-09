@@ -5,7 +5,6 @@ background-color: #f8faf9;
 .slider__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   height: 100%;
 }
@@ -17,11 +16,12 @@ background-color: #f8faf9;
   transform: translateY(-50%);
   width: rem(16px);
   height: rem(36px);
+  z-index: 29;
 
   @include tablets {
     left: unset;
     right: 83%;
-    top: 33.2%;
+    top: 31.2%;
   }
 
   @include phones {
@@ -37,11 +37,12 @@ background-color: #f8faf9;
   transform: translateY(-50%);
   width: rem(16px);
   height: rem(36px);
+  z-index: 29;
 
   @include tablets {
     right: unset;
     left: 83%;
-    top: 33.2%;
+    top: 31.2%;
   }
 
   @include phones {

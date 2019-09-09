@@ -4,32 +4,20 @@
   width: rem(90px);
   height: rem(90px);
   top: 0;
-  left: 0;
+  left: 60%;
+  z-index: 30;
   
   @include tablets {
-    display: none;
+    left: unset;
+    top: -70px;
+    right: 0;
   }
-}
-
-.slider__composition-tablets {
-  position: absolute;
-  display: none;
-  width: rem(90px);
-  height: rem(90px);
-  right: rem(7px);
-  top: rem(24px);
-  z-index: 30;
-
-  @include tablets {
-    display: block;
-  }
-
 }
 
 .slider__composition-dropdown{
   width: rem(90px);
   height: rem(90px);
-  background-color: #00accf;
+  background-color: #61c4d9;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -38,12 +26,18 @@
   cursor: pointer;
   position: relative;
 
-  &:hover .composition__list {
-    right: rem(-281px)
+  &:hover {
+    background-color: #00accf;
   }
 
-  &:hover .composition__list-tablets {
-    left: rem(-281px)
+  &:hover .composition__list {
+    left: 100%;
+  }
+
+  @include tablets {
+    &:hover .composition__list {
+      left: -313%;
+    }
   }
 }
 
@@ -63,7 +57,7 @@
 
 .composition__list {
   position: absolute;
-  right: rem(-9999px);
+  left: rem(9999px);
   top: 0;
   background-color: #fff;
   height: rem(382px);
@@ -73,20 +67,11 @@
   flex-direction: column;
   transition: .4s;
   opacity: .95;
-}
 
-.composition__list-tablets {
-  position: absolute;
-  left: rem(-9999px);
-  top: 0;
-  background-color: #fff;
-  height: rem(382px);
-  width: rem(280px);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  transition: .4s;
-  opacity: .95;
+  @include tablets{
+    right: unset;
+    left: rem(-9999px);
+  }
 }
 
 .compoistion__list-item {

@@ -23,6 +23,16 @@
   width: 24%;
   height: 100%;
   z-index: 10;
+  cursor: pointer;
+
+  &:hover {
+    .team__list-name{
+    text-decoration: underline;
+    }
+    .team__list-desc{
+      cursor: default;
+    }
+  }
 
   @include tablets {
     width: 40%;

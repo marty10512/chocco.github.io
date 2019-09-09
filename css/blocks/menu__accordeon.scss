@@ -47,10 +47,13 @@
       width: 100%;
       flex: 1;
     }
-
+    
     @include tablets  {
       .menu__item-info{
         max-width: rem(530px);
+      }
+      .menu__item-close {
+        display: block; 
       }
     }
   }
@@ -60,6 +63,7 @@
   width: rem(80px);
   background-size: cover;
   position: relative;
+  cursor: pointer;
 
   &:nth-child(2) {
     display: none;
@@ -125,19 +129,34 @@
   overflow: hidden;
   transition: max-width 1s;
   position: relative;
+}
 
+.menu__item-close{
+  display: none;
+  position: absolute;
+  width: rem(27px);
+  height: rem(27px);
+  right: 3%;
+  top: 3%;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.close {
+  position: relative;
+  width: rem(27px);
+  height: rem(27px);
+  
   &:before {
     content: "";
     position: absolute;
     display: block;
     z-index: 100;
-    width: 24px;
+    width: rem(24px);
     border: 2px solid #fff;
     border-radius: 25px;
-    right: 3%;
-    top: 3%;
+    top: 50%;
     transform: rotate(-45deg);
-    cursor: pointer;
   }
 
   &:after {
@@ -145,13 +164,11 @@
     position: absolute;
     display: block;
     z-index: 100;
-    width: 24px;
+    width: rem(24px);
     border: 2px solid #fff;
     border-radius: 25px;
-    right: 3%;
-    top: 3%;
+    top: 50%;
     transform: rotate(45deg);
-    cursor: pointer;
     transition: .3s;
   }
 }
