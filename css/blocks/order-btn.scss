@@ -4,6 +4,10 @@
   @include phones {
     margin-top: rem(25px);
   }
+
+  &--overlay{
+    margin-top: rem(34px);
+  }
 }
 
 .order-btn {
@@ -34,4 +38,3 @@
     }
   }
 }
-
