@@ -18,4 +18,4 @@ task( 'styles', () => {
   .pipe(dest('dist'));
 });
 
-task('default', series('clean', 'copy'));
+task('default', series('clean', 'styles'));
