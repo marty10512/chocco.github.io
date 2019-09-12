@@ -66,6 +66,10 @@ p {
   padding-inline-start: 0px;
 }
 
+input, textarea, select {
+  -webkit-appearance: none;
+}
+
 .wrapper {
   width:100%;
   min-height: 100%;
