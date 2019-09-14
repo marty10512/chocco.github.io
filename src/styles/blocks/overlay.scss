@@ -1,7 +1,7 @@
 .overlay{
   position: absolute;
   top: 99999px;
-  transition: .3s;
+  transition: .5s;
   
   &--active{
     position: fixed;
@@ -18,9 +18,10 @@
     color: black;
     opacity: .99;
     overflow: hidden;
+    transition: .5s;
   }
 }
-//overlay--active
+
 .overlay__messege{
   display: flex;
   flex-direction: column;

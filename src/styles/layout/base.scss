@@ -101,12 +101,12 @@ input, textarea, select {
   min-height: 650px;
 
   @include tablets {
-    height: 100%;
+    height: 100vh;
     min-height: 1000px;
   }
 
   @include phones {
-    height: 100%;
+    height: 100vh;
     min-height: 800px;
   }
 }

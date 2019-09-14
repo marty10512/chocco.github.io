@@ -5,7 +5,7 @@
   right: rem(40px);
   width: rem(16px);
   height: rem(144px);
-  z-index: 10;
+  z-index: 25;
 
   @include tablets {
     display: none;

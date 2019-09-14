@@ -41,6 +41,7 @@
 
   &--active .team__list-desc{
     height: 100%;
+    opacity: 1;
   }
 
   &--active .team__list-name{
@@ -117,6 +118,8 @@
   align-items: center;
   overflow: hidden;
   height: 0;
+  opacity: 0;
+  transition: .3s;
 }
 
 .team__list-position {

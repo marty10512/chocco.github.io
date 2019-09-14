@@ -10,6 +10,12 @@
   background-color: #f8faf9;
   position: relative;
   display: none;
+  opacity: 0;
+
+  &--active{
+    display: block;
+    opacity: 1;
+  }
 
   @include phones {
     padding: 0 rem(1px);
@@ -54,10 +60,6 @@
     height: rem(540px);
     width: rem(460px);
   }
-}
-
-.comments-item--active {
-  display: block;
 }
 
 .comments-item__data {
