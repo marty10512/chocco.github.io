@@ -1,14 +1,27 @@
-.map  {
-  background: url('./img/map/map-bg.jpg') center center / cover no-repeat;
+.last  {
   font-size: 21px;
   position: relative;
+}
+
+.map {
+height: 86%;
+}
+
+.map__hint {
+  font-size: 16px;
+  font-family: alegreya_sans;
+}
+
+.map__balloon {
+  font-family: alegreya_sans;
+  font-size: 16px;
 }
 
 .footer {
   background-color: #fff;
   position: absolute;
   bottom: 0;
-  height: 4.42em;
+  height: 14%;
   width: 100%;
 
   @include phones {

@@ -68,7 +68,7 @@ task( 'styles', () => {
     .pipe(gulpif(env === 'prod', babel({presets: ['@babel/env']})))
     .pipe(gulpif(env === 'prod',uglify()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
-    .pipe(dest('dist'))
+    .pipe(dest('dist/scripts'))
     .pipe(reload({stream: true}));
   });
 

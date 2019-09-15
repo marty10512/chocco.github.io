@@ -76,6 +76,7 @@ input, textarea, select {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .container {
   max-width: 940px;

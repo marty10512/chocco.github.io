@@ -9,6 +9,7 @@
 .properties__list {
   display: flex;
   justify-content: space-around;
+  padding-bottom: rem(16px);
 
   @include tablets {
     flex-direction: column;
