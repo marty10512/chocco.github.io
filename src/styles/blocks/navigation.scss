@@ -1,5 +1,13 @@
 .navigation {
-  padding-top: rem(22px);
+  padding-top: rem(480px);
+  
+  @include tablets {
+    padding-top: rem(768px);
+  }
+
+  @include phones {
+    padding-top: rem(608px);
+  }
 }
 
 .navigation__list {

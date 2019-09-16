@@ -1,0 +1,23 @@
+.video {
+  background-color: #f8faf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//https://www.youtube.com/embed/lIQxzE0Aw_g?controls=0&disablekb=0&showinfo=0&rel=0&autoplay=0&modestbranding=0&wmode=opaque&enablejsapi=1&origin=https%3A%2F%2Fvveksler.github.io&widgetid=1
+
+.video__title{
+  padding-top: rem(65px);
+  z-index: 100;
+}
+
+.video-obj {
+  width: 70.02%;
+  height: 100%;
+}
+
+.video-obj__item {
+  width: 100%;
+  height: 70.02%;
+}

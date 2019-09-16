@@ -1,25 +1,32 @@
+.comments-slider{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  @include tablets {
+    width: 80%;
+  }
+}
+
 .comments__list {
-  display: flex;
-  flex-direction: row;
-  
+  width: 300%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  white-space: nowrap;
+  font-size: 0;
+  transition: .5s;
 }
 
 .comments-item {
+  width: 33.3333333333333333333333%;
+  margin-top: rem(50px);
   height: rem(345px);
-  margin-top: rem(45px);
   background-color: #f8faf9;
   position: relative;
-  display: none;
-  opacity: 0;
-
-  &--active{
-    display: block;
-    opacity: 1;
-  }
-
-  @include phones {
-    padding: 0 rem(1px);
-  }
+  white-space: normal;
+  display: inline-flex;
 
   &:before {
     content: "";
@@ -46,39 +53,34 @@
   }
 
   @include tablets {
-    height: rem(660px);
-    width: rem(460px);
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
 
     &:before{
-      width: rem(117px);
       height: rem(157px);
     }
   }
 
   @include phones {
-    margin-top: rem(34px);
-    height: rem(540px);
-    width: rem(460px);
-  }
-}
-
-.comments-item__data {
-  display: flex;
-  justify-content: space-between;
-  padding: rem(50px) rem(185px) rem(35px) rem(45px);
-
-  @include tablets {
     flex-direction: column;
-    padding: rem(50px) 0 rem(35px);
-    align-items: center;
+    margin-top: rem(34px);
+    height: 100%;
+    padding: 0 rem(1px);
   }
 }
+
+
 
 .comments-item__pic {
+  margin-left: rem(45px);
+  margin-top: rem(50px);
   width: rem(253px);
   object-fit: cover;
+  z-index: 10;
 
   @include tablets {
+    margin-left: 0;
     width: rem(203px);
   }
 
@@ -106,11 +108,17 @@
 }
 
 .comments-item__info {
+  margin-top: rem(65px);
   width: rem(436px);
   margin-left: rem(16px);
+  z-index: 10;
 
   @include tablets {
-   text-align: center; 
+    width: unset;
+    margin-top: unset;
+    text-align: center; 
+    margin-left: 0;
+    padding-bottom: rem(16px);
   }
 }
 
@@ -119,7 +127,7 @@
   font-weight: 300;
 
   @include tablets {
-   margin-top: rem(35px); 
+   margin-top: rem(20px); 
   }
 
   @include phones {
@@ -131,14 +139,11 @@
   font-size: 18px;
   font-weight: 100;
   padding: rem(10px);
+
 }
 
 .comments-item__author {
   font-size: 18px;
   font-weight: 300;
   padding-top: rem(30px);
-
-  &--two{
-    padding-top: 0;
-  }
 }

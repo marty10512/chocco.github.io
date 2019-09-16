@@ -1,6 +1,6 @@
 (function() {
-let commentNav = document.querySelectorAll('.navigation__item');
-let commentItem = document.querySelectorAll('.comments-item');
+let commentNav = $('.navigation__item');
+let commentList = $('.comments__list');
 let commentId;
 let commentNumber;
 
@@ -10,13 +10,11 @@ for (commentId = 0; commentId < commentNav.length; commentId++) {
     for (commentNumber = 0; commentNumber < commentNav.length; commentNumber++) {
       if (commentNav[commentNumber] !== this) {
         commentNav[commentNumber].classList.remove('navigation__item--active');
-        commentItem[commentNumber].classList.remove('comments-item--active');
       } else {
         this.classList.add('navigation__item--active');
-        commentItem[commentNumber].classList.add('comments-item--active');
-        $('.comments-item--active').animate({ opacity: .1 }, 0);
-        $('.comments-item--active').animate({ opacity: 1 }, 500);
+        commentList.css('left', -[commentNumber] * 100 + '%');
       }
     }
   })
-}})()
+}
+})()

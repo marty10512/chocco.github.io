@@ -8,7 +8,8 @@
   <title>CHOCCO</title>
   <link rel="stylesheet" href="./main.min.css">
   <script src="./scripts/main.min.js" defer></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=cfc16e04-b37a-489d-a625-2a8af6d14a25&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=cfc16e04-b37a-489d-a625-2a8af6d14a25&lang=ru_RU"
+    type="text/javascript"></script>
 </head>
 
 <body id="scroll">
@@ -560,13 +561,12 @@
           <h2 class="section-title">отзывы</h2>
         </div>
 
-        <div class="comments__list">
-          <li class="comments-item comments-item--active">
-            <div class="comments-item__data">
+        <div class="comments-slider">
+          <ul class="comments__list">
+            <li class="comments-item">
+
               <div class="comments-item__pic">
-
                 <img src="./img/comments/first-comment.jpg" alt="" class="comments-item__photo">
-
               </div>
               <div class="comments-item__info">
                 <div class="comments-item__title">
@@ -585,85 +585,84 @@
                   <h5>Алёна Хмельницкая</h5>
                 </div>
               </div>
-            </div>
 
-          </li>
-          <li class="comments-item">
-            <div class="comments-item__data comments-item__data--two">
-              <div class="comments-item__pic">
-
-                <img src="./img/comments/second-comment.jpg" alt="" class="comments-item__photo">
-
-              </div>
-              <div class="comments-item__info comments-item__info--two">
-                <div class="comments-item__title">
-                  <h3>Лучшие батончики премиум уровня</h3>
-                </div>
-                <div class="comments-item__text">
-                  <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как
-                    говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
-                    кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
-                    чем минус.
-                  </p>
-                </div>
-                <div class="comments-item__author comments-item__author--two">
-                  <h5>Мария Орлова</h5>
-                </div>
-              </div>
-            </div>
-
-          </li>
-          <li class="comments-item">
-            <div class="comments-item__data comments-item__data--two">
-              <div class="comments-item__pic">
-
-                <img src="./img/comments/third-comment.jpg" alt="" class="comments-item__photo">
-
-              </div>
-              <div class="comments-item__info comments-item__info--two">
-                <div class="comments-item__title">
-                  <h3>Идеально подходят для спортсменов</h3>
-                </div>
-                <div class="comments-item__text">
-                  <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
-                    доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю
-                    за этот качественный и экологичный продукт.
-                  </p>
-                </div>
-                <div class="comments-item__author comments-item__author--two">
-                  <h5>Вадим Грачев</h5>
-                </div>
-              </div>
-            </div>
-
-          </li>
-        </div>
-
-        <div class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active">
-              <a href="#" class="navigation__link">
-                <img src="./img/comments/first-menu.jpg" alt="" class="navigation__pic">
-              </a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
-                <img src="./img/comments/second-menu.jpg" alt="" class="navigation__pic">
-              </a>
+            <li class="comments-item">
+                <div class="comments-item__pic">
+                  <img src="./img/comments/second-comment.jpg" alt="" class="comments-item__photo">
+                </div>
+                <div class="comments-item__info">
+                  <div class="comments-item__title">
+                    <h3>Лучшие батончики</h3>
+                  </div>
+                  <div class="comments-item__text">
+                    <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако,
+                      как
+                      говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
+                      кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
+                      чем минус.
+                    </p>
+                  </div>
+                  <div class="comments-item__author comments-item__author--two">
+                    <h5>Мария Орлова</h5>
+                  </div>
+                </div>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
-                <img src="./img/comments/third-menu.jpg" alt="" class="navigation__pic">
-              </a>
+            <li class="comments-item">
+                <div class="comments-item__pic">
+                  <img src="./img/comments/third-comment.jpg" alt="" class="comments-item__photo">
+                </div>
+                <div class="comments-item__info comments-item__info--two">
+                  <div class="comments-item__title">
+                    <h3>Идеально для спортсменов</h3>
+                  </div>
+                  <div class="comments-item__text">
+                    <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
+                      доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо
+                      производителю
+                      за этот качественный и экологичный продукт.
+                    </p>
+                  </div>
+                  <div class="comments-item__author comments-item__author--two">
+                    <h5>Вадим Грачев</h5>
+                  </div>
+                </div>
             </li>
           </ul>
-        </div>
 
+          <div class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--active">
+                <a href="#" class="navigation__link">
+                  <img src="./img/comments/first-menu.jpg" alt="" class="navigation__pic">
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <img src="./img/comments/second-menu.jpg" alt="" class="navigation__pic">
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">
+                  <img src="./img/comments/third-menu.jpg" alt="" class="navigation__pic">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
     </section>
 
     <section class="section video" id="sec7">
+      <div class="video__title">
+        <h2 class="section-title">как мы работаем</h2>
+      </div>
+      <div class="player">
+        <div class="video-obj">
+          <iframe class="video-obj__item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+        </div>
+      </div>
 
     </section>
 

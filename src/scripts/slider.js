@@ -1,5 +1,5 @@
 (function(){
-  const prevBtn = document.querySelector('.prev-btn');
+const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const slide = document.querySelector('.slider__menu');
 const computed = getComputedStyle(slide);
