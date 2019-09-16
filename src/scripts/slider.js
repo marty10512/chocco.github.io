@@ -7,8 +7,6 @@ const computed = getComputedStyle(slide);
 nextBtn.addEventListener('click', function (e) {
   event.preventDefault();
   let left = parseInt(computed.left);
-
-
   if (left == '0') {
     slide.style.left = -100 + '%';
   } else {
