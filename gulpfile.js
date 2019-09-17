@@ -59,6 +59,7 @@ task( 'styles', () => {
 
   const libs = [
     'node_modules/jquery/dist/jquery.js',
+    
     'src/scripts/*.js'  
   ];
 

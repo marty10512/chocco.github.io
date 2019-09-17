@@ -72,12 +72,17 @@ input, textarea, select {
 
 .wrapper {
   width:100%;
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   overflow: hidden;
 }
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transform: translateY();
+}
+
 .container {
   max-width: 940px;
   width: 95%;
@@ -103,12 +108,12 @@ input, textarea, select {
 
   @include tablets {
     height: 100vh;
-    min-height: 1000px;
+    min-height: 650px;
   }
 
   @include phones {
     height: 100vh;
-    min-height: 800px;
+    min-height: 650px;
   }
 }
 
