@@ -22,6 +22,7 @@
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "browser-sync": "^2.26.7",
+    "bxslider": "^4.2.14",
     "cross-env": "^5.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",

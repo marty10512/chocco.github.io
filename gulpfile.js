@@ -37,6 +37,7 @@ task( 'copy:fonts', () => {
   return src('src/fonts/**/*').pipe(dest('dist/fonts')).pipe(reload({stream:true}));
 });
 
+
 const styles = [
   'node_modules/normalize.css/normalize.css',
   'src/styles/main.scss'

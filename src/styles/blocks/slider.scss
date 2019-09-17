@@ -1,4 +1,4 @@
-.slider {
+.slider-sec {
 background-color: #f8faf9;
 }
 
@@ -7,6 +7,7 @@ background-color: #f8faf9;
   flex-direction: column;
   position: relative;
   height: 100%;
+  z-index: 100;
 }
 
 .prev-btn {
@@ -49,4 +50,32 @@ background-color: #f8faf9;
     left: unset;
     right: 0;
   }
+}
+
+.bx-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bx-pager {
+  display: none;
+}
+
+.bx-controls-direction {
+  position: relative;
+}
+
+.bx-prev {
+  position: absolute;
+  z-index: 100;
+  top: rem(-360px);
+  left: 0;
+}
+
+.bx-next {
+  position: absolute;
+  right: 0;
+  top: rem(-360px);
+  z-index: 100;
 }

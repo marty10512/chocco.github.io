@@ -193,14 +193,14 @@
       </div>
     </section>
 
-    <section class="section slider" id="sec3">
+    <section class="section slider-sec" id="sec3">
       <div class="container slider__container">
 
 
 
         <div class="slider__content">
-          <ul class="slider__menu">
-            <li class="slider__item">
+          <div class="slider">
+            <div class="slider__item">
               <div class="slider__composition">
                 <div class="slider__composition-dropdown">
                   <svg class="slider__composition-icon" viewBox="0 0 442.326 442.326">
@@ -288,8 +288,8 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="slider__item">
+            </div>
+            <div class="slider__item">
               <div class="slider__composition">
                 <div class="slider__composition-dropdown">
                   <svg class="slider__composition-icon" viewBox="0 0 442.326 442.326">
@@ -369,18 +369,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
 
         </div>
-
-
-        <a href="#" class="prev-btn">
-          <img src="./img/slider/prev-btn.png" alt="prev" class="prev-btn__pic">
-        </a>
-        <a href="#" class="next-btn">
-          <img src="./img/slider/next-btn.png" alt="next" class="next-btn__pic">
-        </a>
 
       </div>
     </section>
@@ -588,45 +580,45 @@
 
             </li>
             <li class="comments-item">
-                <div class="comments-item__pic">
-                  <img src="./img/comments/second-comment.jpg" alt="" class="comments-item__photo">
+              <div class="comments-item__pic">
+                <img src="./img/comments/second-comment.jpg" alt="" class="comments-item__photo">
+              </div>
+              <div class="comments-item__info">
+                <div class="comments-item__title">
+                  <h3>Лучшие батончики</h3>
                 </div>
-                <div class="comments-item__info">
-                  <div class="comments-item__title">
-                    <h3>Лучшие батончики</h3>
-                  </div>
-                  <div class="comments-item__text">
-                    <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако,
-                      как
-                      говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
-                      кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
-                      чем минус.
-                    </p>
-                  </div>
-                  <div class="comments-item__author comments-item__author--two">
-                    <h5>Мария Орлова</h5>
-                  </div>
+                <div class="comments-item__text">
+                  <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако,
+                    как
+                    говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же,
+                    кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс,
+                    чем минус.
+                  </p>
                 </div>
+                <div class="comments-item__author comments-item__author--two">
+                  <h5>Мария Орлова</h5>
+                </div>
+              </div>
             </li>
             <li class="comments-item">
-                <div class="comments-item__pic">
-                  <img src="./img/comments/third-comment.jpg" alt="" class="comments-item__photo">
+              <div class="comments-item__pic">
+                <img src="./img/comments/third-comment.jpg" alt="" class="comments-item__photo">
+              </div>
+              <div class="comments-item__info comments-item__info--two">
+                <div class="comments-item__title">
+                  <h3>Идеально для спортсменов</h3>
                 </div>
-                <div class="comments-item__info comments-item__info--two">
-                  <div class="comments-item__title">
-                    <h3>Идеально для спортсменов</h3>
-                  </div>
-                  <div class="comments-item__text">
-                    <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
-                      доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо
-                      производителю
-                      за этот качественный и экологичный продукт.
-                    </p>
-                  </div>
-                  <div class="comments-item__author comments-item__author--two">
-                    <h5>Вадим Грачев</h5>
-                  </div>
+                <div class="comments-item__text">
+                  <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно
+                    доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо
+                    производителю
+                    за этот качественный и экологичный продукт.
+                  </p>
                 </div>
+                <div class="comments-item__author comments-item__author--two">
+                  <h5>Вадим Грачев</h5>
+                </div>
+              </div>
             </li>
           </ul>
 
@@ -655,12 +647,15 @@
     </section>
 
     <section class="section video" id="sec7">
-      <div class="video__title">
-        <h2 class="section-title">как мы работаем</h2>
-      </div>
-      <div class="player">
-        <div class="video-obj">
-          <iframe class="video-obj__item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"></iframe>
+      <div class="container video__container">
+        <div class="video__title">
+          <h2 class="section-title">как мы работаем</h2>
+        </div>
+        <div class="media-wrapper">
+          <video id="player1" width="640" height="360" style="max-width:100%;"
+            poster="img/video/video-poster.png" preload="none" controls playsinline webkit-playsinline>
+            <source src="img/video/video.mp4"type="video/mp4">
+          </video>
         </div>
       </div>
 
