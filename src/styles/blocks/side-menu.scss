@@ -41,8 +41,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  &--active, &:hover {
+  &--active,&:hover {
     opacity: 1;
     transition: 0.3s;
   }
 }
+

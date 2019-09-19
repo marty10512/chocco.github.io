@@ -59,7 +59,7 @@ task( 'styles', () => {
 
   const libs = [
     'node_modules/jquery/dist/jquery.js',
-    
+    'node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
     'src/scripts/*.js'  
   ];
 
