@@ -2,7 +2,8 @@
   color: #fff;
 
   @include tablets {
-    margin-top: rem(55px);
+    margin-top: rem(30px);
+    padding-bottom: rem(20px);
   }
 
   @include phones {

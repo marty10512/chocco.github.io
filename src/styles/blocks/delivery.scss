@@ -43,4 +43,12 @@
 .delivery__title {
   margin-top: 13.23%;
   z-index: 20;
+
+  @include tablets {
+    margin-top: 0;
+  }
+
+  @include phones {
+    margin-top: 13.23%;
+  }
 }

@@ -121,6 +121,10 @@
   transform-origin: 0 0;
   left: 50%;
   bottom: -3%;
+
+  @include tablets {
+    bottom: 13%;
+  }
 }
 
 .menu__item-info {

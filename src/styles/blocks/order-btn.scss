@@ -1,5 +1,9 @@
 .btn-form {
   margin-top: rem(56px);
+  
+  @include tablets {
+    margin-top: rem(30px);
+  }
 
   @include phones {
     margin-top: rem(25px);

@@ -7,12 +7,13 @@
 
   @include tablets {
     flex-wrap: wrap;
-    padding: 0 rem(110px);
-    margin-top: rem(45px)
+    padding: 0 14%;
+    margin-top: 0;
   }
 
   @include phones {
     padding: 0 rem(39px);
+    margin-top: rem(65px);
   }
 }
 

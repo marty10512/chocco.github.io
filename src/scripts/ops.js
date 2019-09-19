@@ -32,7 +32,7 @@ const dataTransition = sectionEq => {
   inscroll = true;
   const position = countPosition(sectionEq);
   const switchSideMenuActiveClass = () =>
-   switchActiveClass($('.side-menu__link', sectionEq));
+   switchActiveClass($('.fixed-menu__item'), sectionEq);
 
   
   switchSideMenuActiveClass();
